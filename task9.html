@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: fixed;
+        z-index: 999;
+        top: 30%;
+        left: 0;
+        height: auto;
+        width: auto;
+      }
+      .facebook,
+      .twitter,
+      .instagram,
+      .youtube {
+        height: 75px;
+        width: 100px;
+        position: absolute;
+        left: -35px;
+        top: 0%;
+        background-color: rgb(3, 150, 103);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+        transition: left 0.4s;
+      }
+      .container > :hover {
+        left: 0px;
+      }
+      .twitter {
+        background-color: rgb(38, 143, 213);
+        top: 85px;
+      }
+      .instagram {
+        background-color: red;
+        top: 170px;
+      }
+      .youtube {
+        background-color: rgb(67, 64, 64);
+        top: 255px;
+      }
+      .pl {
+        text-align: center;
+        font-size: 22px;
+        font-family: chiller;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Index Page</a>
+    <br>
+    <br>
+    <br>
+    <h2 align="center">Hoverable Sidenav Buttons</h2>
+    <br />
+    <p align="center">
+      Hover over the buttons in the left side navigation to open them.
+    </p>
+    <div class="container">
+      <div class="facebook">
+        <a href="https://www.facebook.com/" class="pl">Facebook</a>
+      </div>
+      <div class="twitter">
+        <a href="https://twitter.com/login?lang=en" class="pl">Twitter</a>
+      </div>
+      <div class="instagram">
+        <a href="https://www.instagram.com/" class="pl">Instagram</a>
+      </div>
+      <div class="youtube">
+        <a href="https://www.youtube.com/" class="pl">Youtube</a>
+      </div>
+    </div>
+  </body>
+</html>
